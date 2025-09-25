@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Students Info</title>
+</head>
+
+<body>
+    <h1>请检查你的信息,并提交表单</h1>
+    <hr>
+    <table border="5">
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>专业</th>
+            <th>学号</th>
+        </tr>
+        <tr>
+            <td>吴嘉豪</td>
+            <td>男</td>
+            <td>18</td>
+            <td>自动化</td>
+            <td>328719</td>
+        </tr>
+        <tr>
+            <td>陈佳欣</td>
+            <td>女</td>
+            <td>21</td>
+            <td>音乐表演</td>
+            <td>128026</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>以下是你需要提交的表单</h2>
+    <form>
+        <label>姓名:<input type="text" name="username"></label><br>
+        <label>密码:<input type="password" name="password"></label><br>
+        性别:
+        <label><input type="radio" name="gender" value="male">男</label>
+        <label><input type="radio" name="gender" value="female">女</label>
+        <label><input type="radio" name="gender" value="others">其他</label><br>
+        兴趣:
+        <label><input type="checkbox" name="hobby" value="singing">唱歌</label>
+        <label><input type="checkbox" name="hobby" value="dancing">跳舞</label><br>
+        <label>自我介绍:<br><textarea name="info"></textarea></label><br>
+        <label>专业选择
+            <select name="major">
+                <option value="automatic">自动化</option>
+                <option value="music performance">音乐表演</option>
+            </select><br>
+        </label>
+        <button type="submit">提交 </button>
+        <button type="reset">刷新</button>
+    </form>
+    <hr>
+    <footer>
+        <p><small>Rights Reserved.</small></p>
+    </footer>
+</body>
